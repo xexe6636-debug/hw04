@@ -1,0 +1,26 @@
+# ============================================================
+# requirements.txt —— hw04 ASR 项目依赖
+# ============================================================
+# 安装命令：pip install -r requirements.txt
+#
+# 注意：
+#   1. 建议使用 Python 3.9 ~ 3.11（Whisper 对 3.12 兼容性仍在改进中）
+#   2. 首次运行 whisper_asr.py 时会自动从网络下载模型权重
+#   3. 若需要使用 --mic 麦克风模式，还需额外安装：
+#      pip install sounddevice scipy
+# ============================================================
+
+# 核心：OpenAI Whisper
+openai-whisper>=20231117
+
+# Whisper 底层依赖（通常会自动安装，此处显式列出保证兼容）
+torch>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+more-itertools>=9.1.0
+tiktoken>=0.5.0
+ffmpeg-python>=0.2.0
+
+# 可选：麦克风录音支持（仅 --mic 模式需要）
+# sounddevice>=0.4.6
+# scipy>=1.11.0
