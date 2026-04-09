@@ -70,7 +70,6 @@
 | `No module named 'whisper'` | 未安装依赖 | `pip install openai-whisper` |
 | `ffmpeg not found` | 系统未安装 ffmpeg | Windows：`winget install ffmpeg`；macOS：`brew install ffmpeg` |
 | 首次运行下载很慢 | 模型文件需从 HuggingFace 下载 | 可开代理或预先手动下载放入 `~/.cache/whisper/` |
-| （其他问题请自行补充） | | |
 
 ---
 
